@@ -19,6 +19,10 @@
 import sys, optparse
 from brenda import config, daemon, node, version
 
+# Set default encoding to utf8
+reload(sys)
+sys.setdefaultencoding('utf8')
+
 def main():
     usage = """\
 usage: %s [options]
